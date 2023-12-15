@@ -1,0 +1,13 @@
+## TODO nf-core: Please run the following command to build this file:
+#                nf-core modules create-test-yml /sort
+- name: "fastq sort"
+  command: nextflow run ./tests/modules/self/fastq/sort -entry test_fastq_sort -c ./tests/config/nextflow.config
+  tags:
+    - "fastq"
+    - "fastq/sort"
+  files:
+    - path: "output/fastq/test.bam"
+      md5sum: e667c7caad0bc4b7ac383fd023c654fc
+    - path: "output/fastq/versions.yml"
+      md5sum: a01fe51bc4c6a3a6226fbf77b2c7cf3b
+    
